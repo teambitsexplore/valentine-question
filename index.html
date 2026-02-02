@@ -60,22 +60,26 @@
   <button id="no">No 💔</button>
 
   <script>
-    const noButton = document.getElementById("no");
+  const noButton = document.getElementById("no");
 
-    noButton.addEventListener("mouseover", () => {
-      const x = Math.random() * (window.innerWidth - 100);
-      const y = Math.random() * (window.innerHeight - 50);
-      noButton.style.left = x + "px";
-      noButton.style.top = y + "px";
-    });
+  function moveNoButton() {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 50);
+    noButton.style.left = x + "px";
+    noButton.style.top = y + "px";
+  }
 
-    function yesClicked() {
-      alert("YEEEEEY!!! 💘 I GUESS YOUR MY VALENTINE NOW!! 😍");
-    }
-  </script>
+  noButton.addEventListener("mouseover", moveNoButton);
+  noButton.addEventListener("touchstart", moveNoButton);
+
+  function yesClicked() {
+    alert("YAAAAY!!! 💘 I GUESS YOUR MY VALENTINE!!!! 😍");
+  }
+</script>
 
 </body>
 
 </html>
+
 
 
