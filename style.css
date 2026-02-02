@@ -43,8 +43,12 @@ button {
 }
 
 .valentine-pic {
-    width: 160px;
-  }
+  width: 150px;       /* default size */
+  max-width: 60%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 600px) {
@@ -54,4 +58,5 @@ button {
   }
 
 }
+
 
