@@ -47,6 +47,32 @@
       color: #333;
       position: absolute;
     }
+	.valentine-pic {
+  display: block;
+  width: 120px;      /* FORCE small size */
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto 0;
+  border-radius: 15px;
+  object-fit: contain;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile tweak */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .valentine-pic {
+    width: 100px;   /* even smaller on phones */
+  }
+}
   </style>
 </head>
 <body>
@@ -80,6 +106,7 @@
 </body>
 
 </html>
+
 
 
 
