@@ -44,13 +44,12 @@ button {
 
 .valentine-pic {
   display: block;
-  width: 120px;        /* hard limit size */
-  max-width: 100%;
+  max-width: 100%;        /* cannot exceed container */
+  width: 120px;           /* preferred size */
   height: auto;
-  object-fit: contain;
-  border-radius: 20px;
   margin: 0 auto 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  object-fit: contain;
 }
 
 @media (max-width: 600px) {
@@ -60,6 +59,7 @@ button {
   }
 
 }
+
 
 
 
