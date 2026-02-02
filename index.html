@@ -85,7 +85,7 @@
 
   <button id="no">No 💔</button>
 
-  <script>
+ <script>
   const noButton = document.getElementById("no");
 
   function moveNoButton() {
@@ -99,13 +99,33 @@
   noButton.addEventListener("touchstart", moveNoButton);
 
   function yesClicked() {
-    alert("YAAAAY!!! 💘 I GUESS YOUR MY VALENTINE!!!! 😍");
+    for (let i = 0; i < 25; i++) {
+      createHeart();
+    }
+    setTimeout(() => {
+      alert("YAAAAY!!! 💘 I GUESS YOU'RE MY VALENTINE!!!! 😍");
+    }, 300);
+  }
+
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerText = "❤️";
+
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.top = Math.random() * window.innerHeight + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 2000);
   }
 </script>
-
 </body>
 
 </html>
+
 
 
 
